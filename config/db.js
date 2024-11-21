@@ -1,7 +1,8 @@
 import mongoose from 'mongoose'
-import colors from "colors";
+//import colors from "colors";
 const connectDB = async () => {
     try{
+          // eslint-disable-next-line no-undef
           const conn = await mongoose.connect(process.env.MONGO_URL)
           console.log(`Connected to Mongodb Database ${conn.connection.host}`);
     }catch(error){
